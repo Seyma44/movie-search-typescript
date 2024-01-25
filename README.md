@@ -1,46 +1,60 @@
-# Getting Started with Create React App
+# Responsive React Movie App with Typescript/Sass and OMDB API
+Welcome to the React Film Search Application! This application allows users to search for movies using the OMDB API and view relevant movie information. The app is designed to be responsive and uses Sass for styling.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://github.com/Seyma44/movie-search-react/assets/3766249/d59add04-48d1-4f8c-923c-1998a4c54a3b
 
-## Available Scripts
+https://github.com/Seyma44/movie-search-react/assets/3766249/b685a9c9-57af-4feb-b88f-e707216f0728
 
-In the project directory, you can run:
+## Table of Contents
 
-### `yarn start`
+- [Getting Started](#getting-started)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [API Key](#api-key)
+- [Usage](#usage)
+- [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting Started
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Prerequisites
 
-### `yarn test`
+Before you begin, make sure you have the following tools installed on your system:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Node.js](https://nodejs.org/) (Recommended LTS version)
+- [Yarn](https://yarnpkg.com/) (Yarn is used for package management)
 
-### `yarn build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone this repository to your local machine:
+   ```bash
+   git clone https://github.com/Seyma44/movie-search-typescript.git
+   cd movie-search-typescript
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install project dependencies using Yarn:
+```bash
+yarn install
+```
+  
+### API Key
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To use the OMDB API, you'll need an API key. Here's how to obtain and set up the API key:
 
-### `yarn eject`
+Visit the OMDB API website: OMDB API website
+Create an account and obtain your API key.
+Copy your API key.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Environment Variables
+Create a .env file in the project's root directory and set the following variables with your API key and desired API URL:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+REACT_APP_API_URL=your_api_url_here
+REACT_APP_API_KEY=your_api_key_here
+```
+  
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Start the development server:
+```bash
+yarn start
+```
+2. When you open http://localhost:3000/, the default search in the search bar will be for "Pokemon". Each page displays 10 movies. Use pagination to see more results. You can use the search boxes above the table to filter the results. To view the details page, simply click on the movie's poster. When you go back, the page will show the last searched movie.
