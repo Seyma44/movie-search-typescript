@@ -1,0 +1,87 @@
+$font-raleway: var(--font-raleway);
+
+.container {
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @media screen and (max-width: 400px) {
+    padding: 4rem 1rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 4rem 2rem;
+  }
+}
+
+.header {
+  font-size: 3.5rem;
+  font-weight: 600;
+  letter-spacing: 0.9px;
+  background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(59, 163, 255, 1) 47%, rgba(252, 176, 69, 1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.search {
+  width: 70%;
+  margin: 4rem 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.75rem;
+  border-radius: 2rem;
+  background: #1f2123;
+  box-shadow: 5px 5px 7px #ebb059, -5px -5px 7px #2980bb;
+
+  @media screen and (max-width: 600px) {
+    padding: 1rem 1.75rem;
+    width: 100%;
+  }
+}
+
+.search input {
+  flex: 1;
+  border: none;
+  font-size: 1.5rem;
+  font-family: $font-raleway;
+  font-weight: 500;
+  padding-right: 1rem;
+  outline: none;
+  color: #c15dcd;
+  background: #1f2123;
+  height: 52px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1rem;
+    height: 32px;
+  }
+}
+
+.search img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+
+  @media screen and (max-width: 600px) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.empty {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty h2 {
+  font-size: 1.25rem;
+  color: #f9d3b4;
+  font-family: $font-raleway;
+}

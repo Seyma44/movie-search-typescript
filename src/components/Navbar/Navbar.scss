@@ -1,0 +1,115 @@
+ul {
+    list-style: none;
+  }
+  
+  /* navbar */
+  .navbar {
+    background-color: black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    min-height: 70px;
+  }
+  
+  /* logo */
+  .logo {
+    font-size: 25px;
+    font-family: var(--font-roboto-condensed);
+    color: white;
+    padding: 15px;
+    border-radius: 0 20px 0 20px;
+    background: linear-gradient(
+      90deg,
+      rgba(131, 58, 180, 1) 0%,
+      rgba(59, 163, 255, 1) 0%,
+      rgba(252, 176, 69, 1) 100%
+    );
+  }
+  
+  .navlink a {
+    text-decoration: none;
+    color: #72a7ce;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--font-montserrat);
+  }
+  
+  .navlink a:active {
+    color: #c15dcd;
+  }
+  
+  /* ul */
+  .navMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    z-index: 2;
+  }
+  
+  /* media queries */
+  
+  @media screen and (max-width: 780px) {
+    /* hamburger */
+    .hamburger {
+      display: block;
+      cursor: pointer;
+  
+      .bar {
+        background-color: #c15dcd;
+        width: 20px;
+        height: 3px;
+        display: block;
+        margin: 5px;
+        transition: 0.3s ease-in-out;
+  
+        &:nth-child(2) {
+          opacity: 1; // Initially visible
+        }
+  
+        &:nth-child(1) {
+          transform: translateY(0) rotate(0deg);
+        }
+  
+        &:nth-child(3) {
+          transform: translateY(0) rotate(0deg);
+        }
+      }
+  
+      &.active {
+        .bar:nth-child(2) {
+          opacity: 0;
+        }
+        .bar:nth-child(1) {
+          transform: translateY(8px) rotate(45deg);
+        }
+        .bar:nth-child(3) {
+          transform: translateY(-8px) rotate(-45deg);
+        }
+      }
+    }
+  
+    .navMenu {
+      position: absolute;
+      flex-direction: column;
+      gap: 0;
+      top: 70px;
+      left: -100%;
+      text-align: start;
+      width: 100%;
+      transition: 0.7s ease-in-out;
+      background-color: black;
+      padding: 10px;
+  
+      &.active {
+        left: 0;
+      }
+  
+      li {
+        margin: 16px 0;
+      }
+    }
+  }
+  

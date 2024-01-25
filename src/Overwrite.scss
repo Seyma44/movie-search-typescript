@@ -1,0 +1,92 @@
+.ant-input-search {
+    .ant-input {
+      &:focus {
+        border-color: transparent;
+        box-shadow: none;
+      }
+    }
+  
+    > .ant-input-group > .ant-input-group-addon:last-child .ant-input-search-button {
+      padding-top: 0;
+      padding-bottom: 0;
+      border-start-start-radius: 0;
+      border-start-end-radius: 16px;
+      border-end-end-radius: 6px;
+      border-end-start-radius: 16px;
+      background: black;
+      height: 52px;
+      @media screen and (max-width: 600px) {
+          height: 32px; 
+        }
+    }
+    
+    ::placeholder {
+      color: grey;
+    }
+  
+  }
+  .ant-input-group >.ant-input:first-child, :where(.css-dev-only-do-not-override-1qhpsh8).ant-input-group .ant-input-group-addon:first-child {
+    border-start-end-radius: 0;
+    border-end-end-radius: 100px;
+    background-color: transparent;
+}
+  
+  .ant-table-wrapper {
+    .ant-table-filter-trigger {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-block: -4px;
+      margin-inline: 4px -8px;
+      padding: 0 4px;
+      color: #66a6ff;
+      font-size: 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+  
+    .ant-table-thead > tr > th {
+      position: relative;
+      color: rgba(255, 255, 255, 0.88);
+      font-weight: 600;
+      text-align: start;
+      background: #000000;
+      border-bottom: 1px solid #f0f0f0;
+      transition: background-color 0.2s ease;
+    }
+  
+    .ant-table {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 14px;
+      line-height: 1.5714285714285714;
+      list-style: none;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+      background: #000;
+      border-radius: 8px 8px 0 0;
+    }
+  
+    .ant-table-tbody > tr.ant-table-row:hover > td,
+    .ant-table-tbody > tr > td.ant-table-cell-row-hover {
+      background: #1677ff;
+    }
+    .ant-table-pagination.ant-pagination {
+      background: #000;
+    }
+  }
+  
+  .ant-pagination {
+    background-color:#fff;
+    .ant-pagination-item:hover {
+      background-color: #f08145 !important;
+    }
+  }
+  .ant-pagination .ant-pagination-item a {
+    display: block;
+    padding: 0 6px;
+    color: #1677ff !important;
+}
+  
